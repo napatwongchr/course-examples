@@ -1,16 +1,12 @@
-# ✅ CARE Prompt สำหรับสร้าง PRD — Personal Learning Assistant (PLA)
+# CARE Prompt — สร้าง PRD เต็มรูปแบบสำหรับโปรเจ็ค PLA
 
-> Reverse-engineered จาก `pla-app/claudedocs/prd.md` เวอร์ชัน 1.0
-
----
-
-```
 [C — Context]
 
 คุณคือ Senior Product Manager ที่มีประสบการณ์ด้าน EdTech และ SaaS
 ที่เชี่ยวชาญการเขียน PRD สำหรับทีมพัฒนาขนาดเล็ก (Startup / Course Project)
 
 ข้อมูลโปรเจ็กต์:
+
 - Product Name: Personal Learning Assistant (PLA)
 - Platform: Web App (ไม่ใช่ Mobile)
 - กลุ่มเป้าหมาย: นักศึกษามหาวิทยาลัยไทย อายุ 18–24 ปี
@@ -20,6 +16,7 @@
 - Timeline: 2 เดือน
 
 Tech Stack:
+
 - Framework: Next.js 14 + TypeScript (App Router)
 - UI: Shadcn UI บน Tailwind CSS
 - Data Fetching: TanStack Query (client-side caching)
@@ -29,16 +26,17 @@ Tech Stack:
 - Testing: Vitest (ไม่ใช่ Jest)
 
 โครงสร้างการพัฒนา 2 Phase:
+
 - Phase 1 (Prototype): ใช้ mock data แบบ in-memory, ไม่ต่อ database จริง
   เป้าหมาย: validate UX และ core logic อย่างรวดเร็ว
 - Phase 2 (Production): ต่อ PostgreSQL + deploy บน Vercel ด้วย GitHub Actions CI/CD
 
 Feature หลัก 4 กลุ่ม:
+
 - F01 — Topic Manager: จัดการหัวข้อการเรียน (CRUD)
 - F02 — Note Editor + Study Timer: บันทึกเนื้อหา + จับเวลาเรียน
 - F03 — Smart Quiz & Review System: Quiz แบบ rule-based + Spaced Repetition (SM-2)
 - F04 — AI Quiz Generator: ใช้ Claude API สร้างข้อสอบอัตโนมัติจาก note
-
 
 [A — Action]
 
@@ -99,10 +97,10 @@ PRD ต้องมีโครงสร้าง 11 sections ดังนี้
     - ครอบคลุม: Topic, Note, StudySession, Quiz, Question, QuizAttempt, ReviewSchedule
     - ใส่ comment อธิบาย field ที่สำคัญ
 
-
 [R — Result]
 
 ผลลัพธ์ที่ต้องการ:
+
 - ภาษา: ไทยสำหรับคำอธิบาย, อังกฤษสำหรับ technical terms และ code
 - Format: Markdown พร้อม header, table, code block ครบถ้วน
 - ความยาว: ครอบคลุมทุก section โดยไม่ตัดทอน
@@ -110,7 +108,6 @@ PRD ต้องมีโครงสร้าง 11 sections ดังนี้
 - เพิ่ม metadata header: เวอร์ชัน, วันที่อัปเดต, สถานะ
 
 ผลลัพธ์ต้องพร้อมใช้เป็น reference document ให้ทีมพัฒนาใช้ตลอดโปรเจ็กต์
-
 
 [E — Example]
 
@@ -123,15 +120,14 @@ so that I can test my own understanding without creating questions manually.
 
 ตัวอย่างที่ 3 — รูปแบบ TypeScript Interface ที่ต้องการ:
 interface ReviewSchedule {
-  topicId: string
-  lastReviewedAt?: Date
-  nextReviewAt: Date
-  repetitionInterval: number    // days (SM-2 parameter)
-  easeFactor: number            // SM-2 ease factor
-  consecutiveCorrect: number
+topicId: string
+lastReviewedAt?: Date
+nextReviewAt: Date
+repetitionInterval: number // days (SM-2 parameter)
+easeFactor: number // SM-2 ease factor
+consecutiveCorrect: number
 }
 
 ตัวอย่างที่ 4 — Footer ของ PRD:
-*PRD ฉบับนี้สร้างโดยใช้ CARE Prompt Framework และ Claude AI
-— ใช้เป็น reference ตลอดทั้งคอร์ส AI for Software Engineering*
-```
+_PRD ฉบับนี้สร้างโดยใช้ CARE Prompt Framework และ Claude AI
+— ใช้เป็น reference ตลอดทั้งคอร์ส AI for Software Engineering_

@@ -1,10 +1,15 @@
-# ✅ CARE Prompt — Quiz Feature
+# Prompt CARE Examples
 
-**Context:** แอป PLA (Personal Learning Assistant) เขียนด้วย Next.js 14 + TypeScript
-ไฟล์ที่เกี่ยวข้อง: `lib/quiz.ts`, `types/quiz.ts`
+Context: TechUp กำลังจัดคอร์ส "AI for Non-Tech" รุ่นแรก เดือนหน้า กลุ่มเป้าหมายคือคนทำงานสาย HR, Marketing, Operations ที่ยังไม่เคยใช้ AI ในงาน
 
-**Action:** สร้างฟังก์ชัน `fetchQuizQuestions(topicId: string)` ที่ดึง quiz questions จาก Anthropic API
+Action: เขียนบทความ LinkedIn ความยาว 150–200 คำ เพื่อโปรโมทคอร์สและดึงดูดให้คนสมัคร
 
-**Result:** ฟังก์ชันต้อง return `Question[]` ตาม interface ใน `types/quiz.ts`, handle error กรณี API timeout
+Result: บทความต้องมี hook ประโยคแรกที่ดึงดูด จบด้วย CTA ชัดเจน และใช้ภาษาเข้าใจง่าย ไม่มีศัพท์เทคนิค
 
-**Example:** ดูตัวอย่างการเรียก API ที่ `lib/notes.ts` สำหรับ pattern เดียวกัน
+Example:
+คุณใช้เวลา 3 ชั่วโมงเขียนรีพอร์ตที่ AI ทำได้ใน 10 นาที แต่ไม่ใช่เพราะคุณช้า — เพราะยังไม่มีใครสอนวิธีใช้ที่ถูกต้อง
+
+TechUp เปิดคอร์ส "AI for Non-Tech" สำหรับคนทำงานสาย HR, Marketing, และ Operations ไม่ต้องมีพื้นฐานโค้ด ไม่ต้องรู้จัก ChatGPT มาก่อน แค่อยากทำงานให้เร็วขึ้น ฉลาดขึ้น และเหนื่อยน้อยลง
+
+เรียนออนไลน์ 4 สัปดาห์ เริ่ม 1 พฤษภาคมนี้
+👉 ดูรายละเอียดและสมัครได้ที่ลิงก์ในคอมเมนต์
