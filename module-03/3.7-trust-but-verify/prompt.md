@@ -12,5 +12,3 @@
 | premium-bulk  | 20%      |
 
 ใช้ classifyOrder() ที่มีอยู่แล้วช่วย — ห้ามเขียน logic จำแนก tier ซ้ำ
-
-[แนบ utils/order.ts]
