@@ -12,3 +12,4 @@
 | M6 | GitHub Actions, Vercel Config | `module-06/` |
 
 แต่ละโฟลเดอร์มี `README.md` อธิบาย context และวิธีใช้งาน
+# ai-for-swe-course-example
